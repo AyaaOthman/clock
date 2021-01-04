@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+}
+html.dark{
+    --primary-color: #ffffff;
+    --secondary-color: #333;
+}
+html.dark{
+    background-color: #ffffff;
+    color: var(--secondary-color);
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease-in-out
+
+}
+.btn{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--secondary-color);
+    padding: 0.5rem .75rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out
+
+}
+.btn:focus{
+    outline: none;
+}
+.clock{
+    height:200px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.line{
+    position: absolute;
+    width: 3px;
+    background: var(--primary-color);
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+
+}
+.hours{
+    height: 30px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+.min{
+    height: 80px;
+    transform: translate(-50%, -100%) rotate(0deg);
+
+    
+
+}
+.sec{
+    height: 90px;
+    transform: translate(-50%, -100%) rotate(0deg);
+
+    background-color: #e74c3c;
+
+}
+.sec-ring{
+    border: solid #e74c3c;
+    background-color: var(--primary-color);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    border-radius: 50%;
+
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(107, 107, 107);
+}
+
+.digital-clock{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.day-date{
+    background-color: black;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.month{
+    margin-left: 5px;
+}
